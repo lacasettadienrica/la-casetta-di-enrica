@@ -1,0 +1,35 @@
+.container {
+  font-family: sans-serif;
+  padding: 2rem;
+  text-align: center;
+}
+.header img {
+  max-width: 180px;
+  margin-bottom: 1rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.card {
+  background: #e0f7fa;
+  padding: 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #006064;
+  transition: background 0.3s;
+}
+.card:hover {
+  background: #b2ebf2;
+}
+.emoji {
+  font-size: 2rem;
+  display: block;
+}
+.footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #888;
+}
