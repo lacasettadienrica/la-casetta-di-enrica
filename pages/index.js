@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
 
       <header className={styles.header}>
-        <img src="/logo.png" alt="Logo Casetta di Enrica" className={styles.logo} />
+        <img src="/logo-piccolo.png" alt="Logo Casetta di Enrica" className={styles.logo} />
         <h1>Benvenuti nella Casetta di Enrica</h1>
         <p>La vostra guida digitale al soggiorno</p>
       </header>
