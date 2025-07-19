@@ -6,7 +6,7 @@ export default function Home() {
     { title: 'Regole e info', emoji: '📜' },
     { title: 'Check-in e Check-out', emoji: '📍' },
     { title: 'Wi-Fi', emoji: '📶' },
-    { title: 'Supermercati', emoji: '🛒' },
+    { title: 'Market', emoji: '🛒' },
     { title: 'Locali', emoji: '🍽️' },
     { title: 'Spiagge', emoji: '🏖️' },
     { title: 'Esperienze', emoji: '🧭' },
