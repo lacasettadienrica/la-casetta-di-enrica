@@ -1,17 +1,20 @@
+// pages/index.js
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
+const sectionLinks = {
+  'Regole e info': '/regole',
+  'Check-in e Check-out': '/check-in',
+  'Wi-Fi': '/wifi',
+  'Market': '/market',
+  'Locali': '/locali',
+  'Spiagge': '/spiagge',
+  'Esperienze': '/esperienze',
+  'Contatti': '/contatti',
+};
+
 export default function Home() {
-  const sections = [
-    { title: 'Regole e info', emoji: '📜' },
-    { title: 'Check-in e Check-out', emoji: '📍' },
-    { title: 'Wi-Fi', emoji: '📶' },
-    { title: 'Market', emoji: '🛒' },
-    { title: 'Locali', emoji: '🍽️' },
-    { title: 'Spiagge', emoji: '🏖️' },
-    { title: 'Esperienze', emoji: '🧭' },
-    { title: 'Contatti', emoji: '📞' },
-  ];
+  const sections = Object.keys(sectionLinks);
 
   return (
     <div className={styles.container}>
@@ -26,17 +29,13 @@ export default function Home() {
       </header>
 
       <main className={styles.grid}>
-        {sections.map((section) => (
-          <a href="#" className={styles.card} key={section.title}>
-            <span className={styles.emoji}>{section.emoji}</span>
-            <h2>{section.title}</h2>
+        {sections.map((title) => (
+          <a href={sectionLinks[title]} className={styles.card} key={title}>
+            <span className={styles.emoji}>{getEmoji(title)}</span>
+            <h2>{title}</h2>
           </a>
         ))}
       </main>
 
       <footer className={styles.footer}>
-        <p>Vi è piaciuto il soggiorno? Lasciateci una recensione! 🌟</p>
-      </footer>
-    </div>
-  );
-}
+        <p>Vi è piaciuto il soggiorno? Lasciateci una recensione!
