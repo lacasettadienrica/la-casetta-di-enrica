@@ -1,16 +1,15 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-
+// 📜 pages/regole.js
 export default function Regole() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Regole e Informazioni</title>
-      </Head>
-      <main className={styles.main}>
-        <h1>📜 Regole e Info</h1>
-        <p>Qui troverai tutte le informazioni utili per il soggiorno.</p>
-      </main>
+    <div style={{ padding: '1rem' }}>
+      <h1>📜 Regole della casa</h1>
+      <p>Grazie per aver scelto la Casetta di Enrica! Ecco alcune semplici regole per vivere al meglio il soggiorno:</p>
+      <ul>
+        <li>⏰ Silenzio dopo le 22</li>
+        <li>🚭 Non è consentito fumare all’interno</li>
+        <li>🐾 Animali solo su richiesta</li>
+        <li>♻️ Differenziare i rifiuti: trovi i bidoni fuori</li>
+      </ul>
     </div>
   );
 }
